@@ -1,3 +1,7 @@
+--git公钥私钥地址
+Your identification has been saved in /Users/zhanpc/.ssh/id_rsa
+Your public key has been saved in /Users/zhanpc/.ssh/id_rsa.pub
+
 --设置用户账号、邮箱
 git config --global user.name = ""
 git config --global user.email = ""
@@ -33,5 +37,14 @@ git ls-files
 --文件删除
 1 本地删除后，当修改操作正常提交到暂存区，提交到远程仓库
 2 本地仓库删除 git rm <file> 删除的同时，本地也会一起被删除
+
+
+--使用本地git客户端生成SSH公钥与私钥
+ssh-keygen -t rsa -C 'github邮箱'
+
+--确定是否关联远程仓库
+ssh -T git@github.com
+
+
 
 
