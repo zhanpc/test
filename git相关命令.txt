@@ -26,3 +26,12 @@ git reset HEAD <file>
 --版本回退
 git reset --hard HEAD~次数 退几次版本
 git reset --hard 唯一标识 回退到指定版本
+
+--查看git本次仓库的文件
+git ls-files
+
+--文件删除
+1 本地删除后，当修改操作正常提交到暂存区，提交到远程仓库
+2 本地仓库删除 git rm <file> 删除的同时，本地也会一起被删除
+
+
