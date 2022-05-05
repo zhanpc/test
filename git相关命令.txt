@@ -47,4 +47,15 @@ ssh -T git@github.com
 
 
 
+git 分支操作
+git checkout branch 切换到指定分支
+git checkout -b new_branch 新建分支并切换到新建分支
+git branch -d branch 删除指定分支
+git branch  查看所有分支 *号标记当前所在分支
+git merge branch 合并分支。主干合并其他分支 
+git branch -m | -M oldbranch newbranch  重命名分支 如果newbranch已存在，需要-M 强制重命名，否则-m
+
+
+
+
 
