@@ -1,0 +1,22 @@
+--设置用户账号、邮箱
+git config --global user.name = ""
+git config --global user.email = ""
+
+--查看git的配置信息
+git config --list
+
+--查看目录
+git log
+--当前目录修改过的文件提交到暂存区
+git add . 
+
+--将暂存区的文件提交到本地仓库
+git commit 
+
+--撤销暂存区的文件 可以多个文件撤销
+git restore --staged <file>...
+
+--撤销上一次操作
+git reset HEAD <file>
+
+--版本回退
