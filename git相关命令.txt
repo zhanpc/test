@@ -5,8 +5,12 @@ git config --global user.email = ""
 --查看git的配置信息
 git config --list
 
---查看目录
+--查看日志 --pretty=oneline 只显示唯一标识和提交信息
 git log
+
+--查看所有日志
+git reflog
+
 --当前目录修改过的文件提交到暂存区
 git add . 
 
@@ -20,3 +24,5 @@ git restore --staged <file>...
 git reset HEAD <file>
 
 --版本回退
+git reset --hard HEAD~次数 退几次版本
+git reset --hard 唯一标识 回退到指定版本
